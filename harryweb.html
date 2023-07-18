@@ -4,57 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GYM</title>
-    <link rel="stylesheet" href="s.css">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>SIGN-UP/LOG-IN</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fredericka+the+Great&family=Lobster&family=Pacifico&family=Rampart+One&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fredericka+the+Great&family=Lobster&family=Oleo+Script&family=Pacifico&family=Rampart+One&family=Rubik+Moonrocks&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: url("https://images.unsplash.com/photo-1516810714657-e654b97f1d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG1vdGl2YXRpb258ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60")no-repeat center center/cover;
+
+
+        }
+
+        #logo {
+            font-family: 'Tilt Prism', cursive;
+            color: black;
+            font-weight: bold;
+        }
+
+        h2 {
+            width: 40%;
+            margin-top: 70px;
+            margin-left: 100px;
+            text-align: center;
+            color: white;
+            font-family: 'Franklin Gothic Heavy', sans-serif;
+            font-weight: bold;
+        }
+
+        .section form {
+            display: grid;
+            width: 20px;
+            border-radius: 5px;
+            margin-left: 16%;
+        }
+
+        .section input {
+            padding: 5px 60px;
+            border-radius: 8px;
+            margin: 4px;
+            width: 120%;
+            text-align: center;
+            font-size: 17px;
+            font-family: 'Rubik Moonrocks', cursive;
+
+
+        }
+
+        #NEXT {
+            background-image: linear-gradient(to bottom, #1E90FF, #9370DB);
+            transition: background-image 0.5s ease-in-out;
+            width: 187%;
+            font-size: 17px;
+            font-family: 'Rubik Moonrocks', cursive;
+
+
+        }
+
+        #NEXT:hover {
+            cursor: pointer;
+            background-image: linear-gradient(to bottom, #9370DB, #FFC0CB);
+        }
+
+        footer {
+            color: black;
+            display: gird;
+            grid-template-columns: repeat(2, 1000px);
+        }
+
+        p {
+            color: rgb(150, 62, 150);
+        }
+    </style>
 </head>
 
 <body>
-    <div class="mainclass">
-        <header id="headerid1">
-            <!-- <OL><img src="s.jpg" alt="ERROR"></OL> -->
-            <ol>
-                <li>HARRY FITNESS&#x2730;</li>
-            </ol>
-        </header>
-        <header id="headerid2">
-            <ol>
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>FITNEESS CALCULATOR</li>
-                <li>CONTACT US</li>
+    <div class="headers">
+        <div>
+            <picture id="logo">
 
-            </ol>
-        </header>
-        <header id="headerid3">
-            <ol>
-                <li>CALL US NOW</li>
-                <li>EMAIL US</li>
-            </ol>
+                AHMAD-FITNESS&#x2730;
 
-        </header>
-    </div>
-    <footer id="parent">
-        <div class="child">
-            <h3>JOIN THE BEST GYM OF KARACHI</h3>
-            <form action="m.l">
-                <label for="name"></label>
-                <input type="text" name="my name" id="name" placeholder="ENTER YOUR NAME">
-                <label for="age"></label>
-                <input type="number" name="my age" id="age" placeholder="ENTER YOUR AGE">
-                <label for="gender"></label>
-                <input type="text" name="my gender" id="gender" placeholder="ENTER YOUR GENDER">
-                <label for="locality"></label>
-                <input type="text" name="my locality" id="locality" placeholder="ENTER YOUR LOCALITY">
-                <label for="email id"></label>
-                <input type="email" name="my email id" id="email id" placeholder="ENTER YOUR EMAIL ID">
-                <label for="phone number"></label>
-                <input type="text" name="my phone number" id="phone number" placeholder="ENTER YOUR PHONE NO">
-                <label for="submit"></label>
-                <input type="submit" value="SUBMIT" id="submit">
-            </form>
+            </picture>
         </div>
-    </footer>
+        <section class="section">
+            <h2>SIGN-UP/LOG-IN</h2>
+            <form action="gym.html" method="post">
+                <label for="name"></label>
+                <input type="text" name="my name" id="name" placeholder="ENTER USER-NAME">
+                <label for="password"></label>
+                <input type="password" name="password" id="password" placeholder="ENTER YOUR PASSWORD">
+                <label for="NEXT"></label>
+                <input type="submit" value="NEXT" id="NEXT">
+            </form>
+        </section>
+    </div>
+
 </body>
+
 
 </html>
